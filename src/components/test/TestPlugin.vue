@@ -1,6 +1,14 @@
 <template>
     <div style="width: 100%; paddint-top: 10%;">
         <h1>Test</h1>
+        <Splide :options="{ rewind: true }">
+            <SplideSlide>
+                <img src="image1.jpg" alt="Sample 1">
+            </SplideSlide>
+            <SplideSlide>
+                <img src="image2.jpg" alt="Sample 2">
+            </SplideSlide>
+        </Splide>
         <!-- <slick
             ref="slick"
             :options="slickOptions"
@@ -43,7 +51,7 @@
             <swiper-slide>Slide 5</swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
         </swiper> -->
-        <FlickingOne 
+        <!-- <FlickingOne 
             ref="flicking"
             :options="{ align: 'prev', circular: true }"
             @move-end="onMoveEnd"
@@ -72,25 +80,32 @@
             <div class="panel">
                 <img style="width: 100%" src="https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80" />
             </div>
-        </FlickingTwo>
+        </FlickingTwo> -->
         <!-- <button v-on:click="nextClick">Test Next</button> -->
     </div>
 </template>
 
 <script>
-    import FlickingOne from "@egjs/vue3-flicking";
-    import FlickingTwo from "@egjs/vue3-flicking";
-    import "@egjs/vue3-flicking/dist/flicking.css";
-    import "@egjs/vue3-flicking/dist/flicking-inline.css";
+    // import FlickingOne from "@egjs/vue3-flicking";
+    // import FlickingTwo from "@egjs/vue3-flicking";
+    // import "@egjs/vue3-flicking/dist/flicking.css";
+    // import "@egjs/vue3-flicking/dist/flicking-inline.css";
     // import Axios from 'axios'
 
     // import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
     // import 'swiper/css/swiper.css'
     // import Slick from 'vue-slick';
 
+    import { Splide, SplideSlide } from '@splidejs/vue-splide'
+    import '@splidejs/splide/dist/css/themes/splide-default.min.css'
+
     export default {
         name: 'TestPlugin',
-        components: { FlickingOne, FlickingTwo },
+        components: {
+            Splide,
+            SplideSlide
+        },
+        // components: { FlickingOne, FlickingTwo },
         // components: {
         //     Swiper,
         //     SwiperSlide
@@ -177,6 +192,8 @@
 </script>
 
 <style>
+    /* @import url("node_modules/@egjs/vue-flicking/dist/flicking.css");
+    @import url("node_modules/@egjs/vue-flicking/dist/flicking-inline.css"); */
     /* @import url("node_modules/@egjs/vue-flicking/dist/flicking.css");
     @import url("node_modules/@egjs/vue-flicking/dist/flicking-inline.css"); */
 </style>

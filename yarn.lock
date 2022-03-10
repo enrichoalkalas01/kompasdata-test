@@ -964,6 +964,14 @@
   resolved "https://registry.yarnpkg.com/@egjs/list-differ/-/list-differ-1.0.0.tgz#2277aff52e3e4bd9318d5c30ffc3ba3b6216f05e"
   integrity sha512-HsbMKc0ZAQH+EUeCmI/2PvTYSybmkaWwakU8QGDYYgMVIg9BQ5sM0A0Nnombjxo2+JzXHxmH+jw//yGX+y6GYw==
 
+"@egjs/vue-flicking@^4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@egjs/vue-flicking/-/vue-flicking-4.5.2.tgz#8fb11860d25fa91b89f5763501af6517ff0feef5"
+  integrity sha512-nejYjiGj21inv3bu2Nv5v10zWIZVtWDJzYUX5NKBTXsiWiKjOst2O/O/Bi5hXqs704J2Zxvnqb4QrnFmwYbK9g==
+  dependencies:
+    "@egjs/flicking" "~4.5.0"
+    "@egjs/list-differ" "^1.0.0"
+
 "@egjs/vue3-flicking@^4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@egjs/vue3-flicking/-/vue3-flicking-4.5.1.tgz#565896e8dad27e179873fe922c926e61eb91cd33"
@@ -1039,6 +1047,18 @@
   version "1.0.2"
   resolved "https://registry.npmjs.org/@soda/get-current-script/-/get-current-script-1.0.2.tgz"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
+
+"@splidejs/splide@^3.6.12":
+  version "3.6.12"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.6.12.tgz#9b6bede5c99140fd06754990c91e474374566c30"
+  integrity sha512-ggOUAuSxjWuxxL0IQEZcux26KByfKWfYM2HYmvDBdxkXc5evVW+xuECO+3iuciyrJpgcbYTr4hn0cHfbNlYIeA==
+
+"@splidejs/vue-splide@^0.5.18":
+  version "0.5.18"
+  resolved "https://registry.yarnpkg.com/@splidejs/vue-splide/-/vue-splide-0.5.18.tgz#9e674a1f29ecf0fee4bd11d186db739cef3c4e9e"
+  integrity sha512-S6mt03sRLipoTLz/aq+4AXoc58obe8uEH0X0uE5poCmW3mPwUiyu1ZqX/96EWoRQdrajlV7AFEXDFTS8Upy6FQ==
+  dependencies:
+    "@splidejs/splide" "^3.6.12"
 
 "@types/body-parser@*":
   version "1.19.2"
